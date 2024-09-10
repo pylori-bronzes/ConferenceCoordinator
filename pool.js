@@ -1,0 +1,1 @@
+const partition = (arr, predicate) => arr.reduce((acc, elem) => (predicate(elem) ? [acc[0].concat(elem), acc[1]] : [acc[0], acc[1].concat(elem)]), [[], []]);
